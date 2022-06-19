@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int N=1, empleados=0,salario=0, salarioF=0, nominaact=0, nominafin=0;
+cout<<"Numero de empleados"\n";cin>>empleados;
+while(N<=empleados)
+{cout<<" Empleado No. "<<N<<": \n";
+cout<<"El salario del empleado "<<N<<" es= ";cin>>salario;
+if(salario==0&&salario<=9000)
+{salarioF=(salario+(salario*.25));}
+else
+{if(salario==9001&&salario<=15000)
+{salarioF=(salario+(salario*.20));}
+else
+{if(salario==15001&&salario<=20000)
+{salarioF=salario+(salario*.15);}
+else
+{salarioF=(salario+(salario*.05));}}}
+cout<<"El sueldo aumentado seria= "<<salarioF<<"\n\n";
+nominaact=(salario+salario);
+nominafin=(salarioF+salarioF);
+N++;}
+cout<<"\n";
+cout<<"Nomina Actual= "<<nominaact<<endl;
+cout<<"Nomina Aumentada= "<<nominafin<<endl;
+getch();
+}
