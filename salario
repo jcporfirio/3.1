@@ -1,29 +1,28 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<iostream.h>
+#include<conio.h>
 
-int main()
-{
-int N=1, empleados=0,salario=0, salarioF=0, nominaact=0, nominafin=0;
-cout<<"Numero de empleados"\n";cin>>empleados;
-while(N<=empleados)
-{cout<<" Empleado No. "<<N<<": \n";
-cout<<"El salario del empleado "<<N<<" es= ";cin>>salario;
-if(salario==0&&salario<=9000)
-{salarioF=(salario+(salario*.25));}
-else
-{if(salario==9001&&salario<=15000)
-{salarioF=(salario+(salario*.20));}
-else
-{if(salario==15001&&salario<=20000)
-{salarioF=salario+(salario*.15);}
-else
-{salarioF=(salario+(salario*.05));}}}
-cout<<"El sueldo aumentado seria= "<<salarioF<<"\n\n";
-nominaact=(salario+salario);
-nominafin=(salarioF+salarioF);
-N++;}
-cout<<"\n";
-cout<<"Nomina Actual= "<<nominaact<<endl;
-cout<<"Nomina Aumentada= "<<nominafin<<endl;
+{char Nombre[15];
+float s1=0,aumento=0,tActual=0,tAumentado=0,s2=0     
+int N=0;
+do {cout<<"NOMBRE DE EMPLEADO:" ;
+cin>>Nombre;
+cout<<"sueldo actual es de: $";
+cin>>s1;
+if(s1>=0 && s1<=9000)
+{aumento=s1*(0.20) ;}
+else {if(s1>9000 && s1<=13000)
+{aumento=s1*(0.10);}
+else{ if(s1>13000 && s1<=18000)
+{aumento=s1*(0.05);}
+else{aumento=0.0;}}}
+tactual=tactual+s1;
+s2=s1+aumento;
+taumentado=taumentado+s2;
+cout<<"nombre del empleado"<<nombre<<end1;
+cout<<"sueldo actual de: $"<<s1<<end1;
+cout<<"el sueldo aumentado es de: $"<<s2<<end1;
+while(n==1);
+cout<<"total de nomina actual es de:$<<tactual<<end1;
+cout<<"total de nomina aumentado es de: $"<<taumentado<<end1;
 getch();
 }
